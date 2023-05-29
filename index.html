@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- icon -->
+    <link href="images/boy.png" rel="icon">
+    <!-- css file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Nunito&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img src="images/boy.png" alt="icon" onclick="goUp()">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+
+                <img src="images/menu.png"  alt="menu" class="menu" onclick="displayMenu()">
+            </nav>
+        </div>
+        <div class="menu-block" id="menu-block">
+            <ul>
+                <li><a class="a-element" href="#home">Home</a></li>
+                <li><a class="a-element" href="#about-me">About Me</a></li>
+                <li><a class="a-element" href="#education">Education</a></li>
+                <li><a class="a-element" href="#projects">Projects</a></li>
+                <li><a class="a-element" href="#contact">Contact Me</a></li>
+                <img src="images/up-arrow.png" alt="close-menu-icon" id="up-arrow" onclick="closeMenu()">
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro" id="home">
+            <div class="text">
+                <h1>HEY!</h1><br>
+                <h2>I'm <span>Ali Youssef</span></h2>
+                <h3>A <span>Pro</span>grammer (Front-end Developer)</h3>
+                <a href="documents/CV.pdf" class="btn" style="width: 150px;">My CV</a>
+
+            </div>
+            <img src="images/ali.jpg" alt="Ali">
+        </div>
+
+        <div class="about-me" id="about-me">
+            <div class="about-me1">
+                <div class="text">
+                    <h1 class="sections">About Me</h1>
+                    <p>I am a 21 years old lebanese student, completed my high school in Kuwait and currently studying Software Engineering (3rd year) at Üsküdar University in Istanbul, Turkey.
+                        I'm a selflearner, motivated and a successful student seeking to enhance my career.
+                    </p>
+                </div>
+                <img src="images/card.png" alt="card">
+            </div>
+
+            <div class="about-me2">
+                <img src="images/looking.jpg" alt="ali-looking">
+                <div class="text">
+                    <h2>What am I looking for?</h2>
+                    <p>At this stage, I am looking for getting more experienced with what I love through learning and applying what I learned in real life.
+                         I am ready to learn anything that enhances my career and any chance that comes nearby I will grab it so I can benefit from it as much as I can to be able to compete for my place in the near future.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="education" id="education">
+            <h1 class="sections">Education</h1>
+
+            <div class="edu uni">
+                <div class="info">
+                    <h2>Üsküdar University</h2>
+                    <div>
+                        <p>Bachelor In Software Engineering</p>
+                        <p>3rd Year</p>
+                        <p>10/2020 - Ongoing</p>
+                        <p style="margin-bottom: 10px;">Current GPA: 3.74 / 4.00</p>
+                        <a href="documents/transcript.pdf" class="btn">Download Transcript</a>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </div>
+
+            <div class="edu frontend">
+                <div class="info">
+                    <h2>HTML & CSS</h2>
+                    <div>
+                        <p>1 year experience with HTML and CSS. <br>
+                        Learned them from different courses and backgrounds,
+                        and completed many projects whether for my self or for University projects. <br>
+                        Certificates:</p>
+                        
+                        <div class="certificate">
+                            <div class="cer1">
+                                <img src="images/cer1.png" alt="Meta Certificate">
+                                <a href="https://coursera.org/verify/NV5BA52GCE3P" class="btn">Check</a>
+                            </div>
+                            <div class="cer2">
+                                <img src="images/cer2.png" alt="Meta Certificate">
+                                <a href="https://coursera.org/verify/7DST7GMEN4N9" class="btn">Check</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </div>
+
+            <div class="edu js">
+                <div class="info">
+                    <h2>Javascript</h2>
+                    <div>
+                        <p>Proficient with Javascript</p>
+                        <p>Learned it from many sources and created many projects along.</p>
+                        <p>Certificates:</p>
+                        <div class="certificate">
+                            <div class="cer1">
+                                <img src="images/cer3.png" alt="Meta Certificate">
+                                <a href="https://coursera.org/verify/AFSFY43A3PNJ" class="btn">Check</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </div>
+
+            <div class="edu programming">
+                <div class="info">
+                    <h2>Programming Skills</h2>
+                    <div>
+                        <p>Gained many programming skills from university courses and other online courses.</p>
+                        <p>Problem Solving - Data Structure - OOP</p>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </div>
+
+            <div class="edu version-control">
+                <div class="info">
+                    <h2>Version Control</h2>
+                    <div>
+                        <p>Good knowledge of version control system (Git - Github)</p>
+                        <p>Gained from many online courses and university team work projects. Certificates:</p>
+                        
+                        <div class="certificate">
+                            <div class="cer1">
+                                <img src="images/cer4.png" alt="Meta Certificate">
+                                <a href="https://coursera.org/verify/CV57HLKQ7HPZ" class="btn">Check</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </div>
+
+            <div class="edu other">
+                <div class="info">
+                    <h2>Other Technologies</h2>
+                    <div>
+                        <p>Other Technologies that I have worked with and gained basic knowledge using them.</p>
+                        <br>
+                        <p style="font-weight: bold;">Java - C - #C - SQL - Bootstrap - Figma</p>
+                        
+                    </div>
+                </div>
+                <div class="img"></div>
+            </div>
+
+            <div class="languages">
+                <h1>Languages</h1>
+                <div class="lan-col">
+                    <div class="lan">
+                        <div class="arabic"> <img src="images/arabic.png" alt="arabic"></div>
+                        <div class="text">
+                            <h2>Arabic</h2>
+                            <p>Mother Language</p>
+                        </div>
+                    </div>
+                    <div class="lan">
+                        <div class="english"> <img src="images/english.png" alt="english"></div>
+                        <div class="text">
+                            <h2>English</h2>
+                            <p>Advanced English Skills</p>
+                        </div>
+                    </div>
+                    <div class="lan">
+                        <div class="turkce"> <img src="images/turkiye.png" alt="turkce"></div>
+                        <div class="text">
+                            <h2>Turkish</h2>
+                            <p>Good Speaking & Listening Skills. (B2 Level)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <h1>My Projects</h1>
+            <div class="projects-box">
+                <div class="pro" onclick="goToSite1()">
+                    <img src="images/site1.png" alt="site1">
+                    <div class="hidden" onclick="goToSite1()">
+                        <h3>Blog</h3>
+                        <p>HTML - CSS</p>
+                        <p>(Responsive)</p>
+                    </div>
+                </div>
+                <div class="pro" onclick="goToLeb()">
+                    <img src="images/leb.png" alt="lebanese-culture-website">
+                    <div class="hidden" onclick="goToLeb()">
+                        <h3>Lebanese Culture</h3>
+                        <p>HTML - CSS - Bootstarp - JS</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/site2.png" alt="site2" onclick="goToSite2()">
+                    <div class="hidden" onclick="goToSite2()">
+                        <h3>Perfume Card</h3>
+                        <p>HTML - CSS</p>
+                        <p>(Responsive)</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/web4.png" alt="website" onclick="goToPetSite()">
+                    <div class="hidden" onclick="goToPetSite()">
+                        <h3>Pet Site</h3>
+                        <p>HTML - CSS - Bootstarp</p>
+                        <p>(Responsive)</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/newyear.png" alt="new-year" onclick="goToNewYearSite()">
+                    <div class="hidden" onclick="goToNewYearSite()">
+                        <h3>New Year Countdown</h3>
+                        <p>HTML - CSS - JS</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/credit-card.png" alt="Credit-Cart" onclick="goToCreditSite()">
+                    <div class="hidden" onclick="goToCreditSite()">
+                        <h3>Payment Page</h3>
+                        <p>HTML - CSS</p>
+                        <p>(Responsive)</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/drum.png" alt="Drum-kit" onclick="goToDrumSite()">
+                    <div class="hidden" onclick="goToDrumSite()">
+                        <h3>Drum Kit</h3>
+                        <p>HTML - CSS - JS</p>
+                        <p>(Responsive)</p>
+                    </div>
+                </div>
+                <div class="pro" onclick="goToPass()">
+                    <img src="images/pass.png" alt="Password-generator">
+                    <div class="hidden" onclick="goToPass()">
+                        <h3>Password Generator</h3>
+                        <p>HTML - CSS - JS</p>
+                    </div>
+                </div>
+                <div class="pro" onclick="goToCounter()">
+                    <img src="images/counter.png" alt="Character-Counter">
+                    <div class="hidden" onclick="goToCounter()">
+                        <h3>Character Counter</h3>
+                        <p>HTML - CSS - JS</p>
+                        <p>(Responsive)</p>
+                    </div>
+                </div>
+                <div class="pro" onclick="goToEx()">
+                    <img src="images/portfolio-ex.png" alt="Portfolio-ex">
+                    <div class="hidden" onclick="goToEx()">
+                        <h3>Portfolio Example</h3>
+                        <p>HTML - CSS</p>
+                        <p>(Responsive)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact" id="contact">
+            <h1>Contact Me</h1>
+            <div class="links">
+                <div class="parts">
+                    <img src="images/email.png" alt="Email">
+                    <div><h2>aliifarajj@hotmail.com</h2></div>
+                </div>
+                <div class="parts">
+                    <img src="images/phone.png" alt="Phone">
+                     <div><h2>+90 552 591 57 33</h2></div>
+                </div>
+                <div class="parts">
+                    <img src="images/pin.png" alt="Location">
+                    <div><h2>Istanbul, Turkey</h2></div>
+                </div>
+                <div class="parts" id="last-part">
+                    <img src="images/github.png" alt="Github" onclick="goToGithub()">
+                    <img src="images/linkedin.png" alt="Linkedin" onclick="goToLinkedin()">
+                    <img src="images/instagram.png" alt="Instagram" onclick="goToInsta()">
+                </div>
+                <a href="documents/CV.pdf" class="btn" style="width: 150px;">My CV</a>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div>
+            <img src="images/boy.png" alt="boy">
+            <h3>Ali Youssef</h3>
+        </div>
+        <div><p>Created with <br> HTML, CSS and JS</p></div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

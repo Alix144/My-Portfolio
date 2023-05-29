@@ -1,0 +1,674 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    background-color: #24073b;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #4ec7e6,#24073b);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+.header, main, footer{
+    margin: auto;
+    width: 65%;
+    min-width: 470px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+/********header*********/
+
+.scroll-header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 10;
+    transition: 0.5s;
+}
+
+
+
+.header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 60px;
+    cursor: pointer;
+}
+
+nav{
+    width: 45%;
+    min-width: 365px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav li{
+    font-size: 1rem;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover{
+    border-bottom: solid 1px #fff;
+    font-weight: bold;
+}
+
+/***hamburger btn***/
+.menu{
+    width: 30px;
+    display: none;
+}
+
+.menu-block{
+    display: none;
+    padding: 10px;
+    background-color: rgb(0, 0, 0,0);
+}
+
+.menu-block ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu-block li{
+    margin-bottom: 10px;
+}
+
+.menu-block a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-block a:hover{
+    font-weight: bold;
+    border-bottom: solid 1px #fff;
+}
+
+.menu-block img{
+    width: 30px;
+}
+
+/********main*********/
+
+/***general***/
+
+.sections{
+ font-size: 3rem;
+}
+
+.btn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #4ec7e6;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #4ec7e6;
+    border: solid 1px #4ec7e6;
+}
+
+/***home***/
+.intro{
+    margin-top: 5vh;
+    min-width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro h1{
+    font-size: 5rem;
+}
+
+h2 span{
+    font-size: 2rem;
+    font-weight:bolder;
+    background-image: linear-gradient(90deg, #24073b, #852294);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+h3 span{
+    border-bottom: solid 1px #fff;
+}
+
+.intro img{
+    width: 60%;
+    border-radius: 1000px;
+    
+}
+
+.intro .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro .text a{
+    text-align: center;
+}
+
+
+/***about me***/
+
+.about-me{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.text{
+    margin: auto;
+    width: 70%;
+
+}
+
+.about-me1, .about-me2{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me1 img{
+    width: 20%;
+}
+
+.about-me1 .text{
+    margin: 0;
+    text-align: left;
+}
+
+.about-me2 img{
+    width: 25%;
+    border-radius: 500px;
+}
+
+.about-me2 .text{
+    margin: 0;
+    text-align: right;
+}
+
+/***education***/
+.education{
+    width: 100%;
+    text-align: center;
+}
+
+.education h1{
+    margin-bottom: 20px;
+}
+
+.edu{
+    margin-bottom: 10px;
+    background: rgb(0, 0, 0, 0.6);
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+.edu:hover{
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.6);
+}
+
+.edu .info{
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.info div{
+    height: 80%;
+}
+
+.info h2{
+    height: 10%;
+    min-width: 215px;
+}
+
+.edu .img{
+    width: 50%;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.certificate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificate a{
+    margin: 5px auto;
+    width: 50%;
+}
+
+/***university***/
+.uni .img{
+    background-image: url(images/uskudar.jpg);
+}
+
+/***frontend***/
+.frontend .img{
+    background-image: url(images/html-css.jpg);
+}
+
+.certificate img{
+    margin: auto;
+    width: 50%;
+    max-width: 205px;
+}
+
+.certificate{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cer1, .cer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/***js***/
+.js .img{
+    background-image: url(images/js.jpg);
+}
+
+
+/***programming***/
+.programming .img{
+    background-image: url(images/programming.jpg);
+}
+
+/***version control***/
+.version-control .img{
+    background-image: url(images/git.png);
+}
+
+/***other tech***/
+.other .img{
+    background-image: url(images/other.jpg);
+}
+
+/***languages***/
+
+.languages{
+    margin-top: 10vh;
+}
+
+.lan-col{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lan{
+    margin: 5px;
+    width: 30%;
+    min-width: 230px;
+    min-height: 260px;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lan:hover{
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.6);
+}
+
+.lan div{
+    height: 60%;
+    overflow: hidden;
+}
+
+.lan .text{
+    height: 30%;
+}
+
+.lan div img{
+    width: 100%;
+    object-fit: contain;
+    background-position: center;
+}
+
+
+/***projects***/
+.projects{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.projects h1{
+    margin-bottom: 20px;
+}
+
+.projects-box{
+    padding: 20px;
+    /* background: rgb(0, 0, 0, 0.6); */
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+}
+
+.pro{
+    border-radius: 10px;
+    margin: 5px;
+    height: 45%;
+    width: 40%;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro img{
+    border-radius: 10px;
+    width: 100%;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.hidden{
+    width: 90%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hidden p{
+    color: #fff;
+}
+.pro:hover img {
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.pro:hover .hidden{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/***contact me***/
+
+.contact{
+    text-align: center;
+    
+}
+
+.contact img{
+    width: 50px;
+}
+
+.links{
+    margin: 30px auto;
+    width: 85%;
+    max-width: 435px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parts{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parts div{
+    width: 60%;
+    text-align: center;
+}
+
+#last-part{
+    justify-content: space-evenly;
+}
+
+#last-part img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.6);
+}
+
+
+/********footer*********/
+footer{
+    margin-top: 20vh;
+    padding: 10px;
+    border-top: solid 1px #fff;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items:first baseline; */
+    align-items: center;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+
+/********scroll bar*********/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0px 0 30px #4ec7e6;
+    border-radius: 5px;
+  }
+
+
+/********media query*******/
+
+@media only screen and (max-width: 950px) {
+    .certificate{
+        width: 100%;
+        margin: 0 auto;
+        height: 40%;
+        min-width: none;
+    }
+  }
+
+
+@media only screen and (max-width: 730px) {
+    .header, main, footer{
+        margin: auto;
+        width: 95%;
+        min-width: auto;
+    }
+
+    nav{
+        width: 10%;
+        min-width: 0;
+        text-align: right;
+    }
+
+    header img{
+        width: 40px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav .menu{
+        display: block;
+    }
+
+    /***intro***/
+    .intro{
+        margin-top: 5vh;
+        min-width: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .intro .text a{
+        margin: 0 auto;
+    }
+
+    .intro .text{
+        height: 40%;
+        text-align: center;
+        
+    }
+
+    .intro img{
+        margin-top: 10px;
+    }
+
+    /***about me***/
+    .about-me1, .about-me2{
+        flex-direction: column;
+    }
+
+    .about-me h1{
+        font-size: 2.5rem;
+    }
+    
+    .about-me img{
+        width: 40%;
+    }
+
+    .about-me1 .text{
+        order: 2;
+    }
+
+    .about-me1 img{
+        order: 1;
+    }
+
+    .about-me2 .text{
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .parts{
+        min-width: 0;
+    }
+
+    /***contact me***/
+
+.contact img{
+    width: 35px;
+}
+
+.links{
+    width: 90%;
+    min-width: 0;
+    max-width: 305px;
+}
+
+.parts div{
+    width: 80%;
+}
+  
+}
+
+@media only screen and (max-width: 550px) {
+
+    .intro .text a{
+        width: 70px !important;
+    }
+
+    /***education***/
+    .edu{
+        height: 60vh;
+        width: 70%;
+        min-width: 270px;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .edu .info{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .edu .img{
+        width: 100%;
+        height: 50%;
+        order: -1;
+    }
+
+    /***contact me***/
+    .parts{
+        flex-direction: column;
+    }
+
+    #last-part{
+        flex-direction: row;
+    }
+
+}
