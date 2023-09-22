@@ -81,8 +81,8 @@ function goToPass(){
     window.location.assign("https://alix144.github.io/Password-Generator/");
 }
 
-function goToCounter(){
-    window.location.assign("https://alix144.github.io/Character-Counter/");
+function goToMyGym(){
+    window.location.assign("https://mern-my-gym.onrender.com/");
 }
 
 function goToEx(){
@@ -98,8 +98,4 @@ function goToGithub(){
 
 function goToLinkedin(){
     window.location.assign("https://www.linkedin.com/in/ali-youssef-19aa33207/");
-}
-
-function goToInsta(){
-    window.location.assign("https://www.instagram.com/");
 }

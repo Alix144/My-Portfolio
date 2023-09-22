@@ -313,9 +313,14 @@ h3 span{
 }
 
 
-/***programming***/
-.programming .img{
-    background-image: url(images/programming.jpg);
+/***react***/
+.react .img{
+    background-image: url(images/react.png);
+}
+
+/***mern***/
+.mern .img{
+    background-image: url(images/mern.png);
 }
 
 /***version control***/
